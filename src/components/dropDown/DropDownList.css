@@ -1,0 +1,8 @@
+.content {
+    position: absolute;
+    bottom: -152px;
+    left: -21px;
+    background: #00c4ffa3;
+    display: flex;
+    flex-direction: column;
+}

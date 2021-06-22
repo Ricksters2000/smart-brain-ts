@@ -1,0 +1,12 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    align-self: flex-start;
+}
+
+.input {
+    background-color: lightgray;
+}

@@ -1,0 +1,15 @@
+.error-container {
+    background-color: #ff0000ad;
+    display: flex;
+    flex-direction: column;
+}
+
+.error-cancel-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    margin-right: .25em;
+    margin-left: auto;
+    color: #00000082;
+    font-weight: 800;
+}
