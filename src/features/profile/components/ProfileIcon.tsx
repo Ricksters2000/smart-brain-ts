@@ -14,7 +14,7 @@ interface IProfileIconProps {
 const ProfileIcon = ({userId, userImage, onSignout}: IProfileIconProps) => {
     return(
         <div className='pointer' style={{position: 'relative'}}>
-            <DropDownList image={userImage ? API_URL+userImage : DEFAULT_PFP}>
+            <DropDownList image={userImage ? userImage : DEFAULT_PFP}>
                 <Link to={`/profile/${userId}`}>
                     <DropDownChild text='Profile' onClick={()=>{}} />
                 </Link>
