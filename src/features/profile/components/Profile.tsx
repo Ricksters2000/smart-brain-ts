@@ -79,20 +79,20 @@ const Profile = ({appReady}: IProfileProps) => {
         const userId = getId(id);
         const {age, pet, image} = user as typeof user & {age: number, pet: string, image: string};
         const data = new FormData();
-        // const target = evt.target as typeof evt.target & {
-        //     age: {value: string},
-        //     pet: {value: string},
-        //     image: {files: any[]},
-        // }
-        // console.log(target.age.value, target.pet.value, target.image.files);
+        const target = evt.target as typeof evt.target & {
+            age: {value: string},
+            pet: {value: string},
+            image: {files: any[]},
+        }
+        console.log(target.age.value, target.pet.value, target.image.files);
         
-        // data.append('age', target.age.value);
-        // data.append('pet', target.pet.value);
-        // data.append('image', target.image.files[0]);
+        data.append('age', target.age.value || age.toString());
+        data.append('pet', target.pet.value || pet);
+        data.append('image', target.image.files[0] || '');
 
-        data.append('age', age.toString());
-        data.append('pet', pet);
-        data.append('image', image);
+        // data.append('age', age.toString());
+        // data.append('pet', pet);
+        // data.append('image', image);
 
         updateUser(userId, data)
             .then(resp => {
