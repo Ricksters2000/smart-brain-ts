@@ -65,7 +65,7 @@ const ImageLinkForm = () => {
             <Rank userName={name as string} userRank={entries as number} />
             <form className='form center' onSubmit={onFormSubmit}>
                 <input className='f4 pa2 w-70 center' type='text' name='link' onChange={(e: React.FormEvent<HTMLInputElement>) => setImageUrl(e.currentTarget.value)} />
-                <input className='w-30 grow f4 link ph3 pv2 dib white bg-light-purple' type='submit' />
+                <input className='grow f4 link ph3 pv2 dib white bg-light-purple' type='submit' />
             </form>
             <ImageDisplay link={link} boxes={boxes} />
         </div>

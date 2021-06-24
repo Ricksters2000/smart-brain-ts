@@ -11,7 +11,7 @@ interface IImageDisplayProps {
 const ImageDisplay = ({link, boxes}: IImageDisplayProps) => {
     return(
       <div className='center ma'>
-        <div className='absolute mt2' style={{width: '25%', marginLeft: '35%'}}>
+        <div className='absolute mt2' style={{width: '50%', marginLeft: '24%'}}>
           <img alt='' src={link} width='100%' height='auto'/>
           {boxes.map((box,i) => {
             return <div key={i} className='bounding-box' style={{top: `${box.topRow}%`, right: `${box.rightCol}%`, bottom: `${box.bottomRow}%`, left: `${box.leftCol}%`}}></div>
