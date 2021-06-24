@@ -112,7 +112,7 @@ const Profile = ({appReady}: IProfileProps) => {
             <form className='main-profile' encType="multipart/form-data" onSubmit={onSubmit} onReset={onReset}>
                 <div className='header-row'>
                     <div className="pa3 tc">
-                        <div className="ba dib profile-pic hide-child" style={{backgroundImage: user.image ? `url(${user.image})` : `url(${DEFAULT_PFP})`}}>
+                        <div className="ba dib profile-pic hide-child" style={{backgroundImage: user.image && user.image.substr(user.image.lastIndexOf('/')+1) !== 'null' ? `url(${user.image})` : `url(${DEFAULT_PFP})`}}>
                             {canEdit && (
                                 <>
                                 <label className='child image-button pointer' htmlFor='getImage'>Edit</label>
