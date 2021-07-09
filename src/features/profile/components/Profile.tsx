@@ -86,7 +86,7 @@ const Profile = ({appReady}: IProfileProps) => {
         }
         console.log(target.age.value, target.pet.value, target.image.files);
         
-        data.append('age', target.age.value || age.toString());
+        data.append('age', target.age.value || age?.toString() || '');
         data.append('pet', target.pet.value || pet);
         data.append('image', target.image.files[0] || '');
 
