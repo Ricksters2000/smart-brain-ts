@@ -1,0 +1,14 @@
+{
+    "name": "Smart Brain",
+    "short_name": "Smart Brain",
+    "icons": [
+        {
+            "src": "/icons/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#92e8ff",
+    "background_color": "#92e8ff",
+    "display": "standalone"
+}

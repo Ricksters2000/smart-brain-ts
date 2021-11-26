@@ -4,7 +4,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: linear-gradient(90deg, lightblue, blue);
+  /* background: linear-gradient(90deg, lightblue, blue); */
+  background: linear-gradient(90deg, #ff00cc, #333399);
 }
 
 code {
